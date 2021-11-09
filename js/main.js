@@ -50,10 +50,11 @@ sectionOneObservers.observe(sectionOne);
 
 ///overlay
 
-function on() {
-  document.getElementById("overlay").style.display = "block";
-}
+// function on() {
+//   document.getElementById("overlay").style.display = "block";
+// }
 
 function off() {
   document.getElementById("overlay").style.display = "none";
+  document.getElementById("chef").style.display = "none";
 }

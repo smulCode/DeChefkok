@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/DeChefkok/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
@@ -28,10 +28,10 @@
             <a href="#" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Menu</a>
+            <a href="#menu-dishes" class="nav-link">Menu</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
         <button id="hamburger-button" class="hamburger">
@@ -44,7 +44,7 @@
 
     <div class="main">
       <video
-        src="/DeChefkok/video/production ID_4058085.mp4"
+        src="/video/production ID_4058085.mp4"
         autoplay
         loop
         muted
@@ -61,7 +61,7 @@
             <a href="" class="btn-link">Buy</a>
           </button>
           <button class="primary-btn">
-            <a href="" class="btn-link">show menu</a>
+            <a href="#menu-dishes" class="btn-link">show menu</a>
           </button>
         </div>
       </div>
@@ -152,7 +152,7 @@
 
     <section class="fill"></section>
 
-    <section class="menu-dishes">
+    <section class="menu-dishes" id="menu-dishes">
       <h2>Menu</h2>
       <div class="container">
         <ul class="menu-list">
@@ -306,21 +306,21 @@
     <div class="overlay-content" id="overlay" onclick="off()">
       <div id="text">
         <p class="overlay-text">Click to remove overlay</p>
-        <q class="click-chef">Click chef to add overlay</q>
+        <!-- <q class="click-chef">Click chef to add overlay</q> -->
       </div>
     </div>
 
     <div class="chef-container">
-      <img
-        onclick="on()"
-        src="/DeChefkok/img/chefkok.png"
+      <img id="chef"
+        onclick="off()"
+        src="/img/chefkok.png"
         alt="chefkok"
         class="img-chef"
       />
     </div>
-    <footer>
+    <footer id="footer">
       <div class="footer-container">
-        <div class="contact">
+        <div class="contact" id="contact">
           <div class="contact-content">
             <h4>Contact</h4>
             <div class="contact-text">
@@ -339,13 +339,13 @@
               <h4>Navigation</h4>
               <ul class="f-nav-list">
                 <li class="f-nav-item">
-                  <a href="" class="f-nav-link"> HOME </a>
+                  <a href="#" class="f-nav-link"> HOME </a>
                 </li>
                 <li class="f-nav-item">
-                  <a href="" class="f-nav-link"> MENU </a>
+                  <a href="#menu-dishes" class="f-nav-link"> MENU </a>
                 </li>
                 <li class="f-nav-item">
-                  <a href="" class="f-nav-link"> CONTACT </a>
+                  <a href="#contact" class="f-nav-link"> CONTACT </a>
                 </li>
               </ul>
             </div>
@@ -354,6 +354,6 @@
       </div>
     </footer>
 
-    <script src="/DeChefkok/js/main.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
